@@ -1,0 +1,90 @@
+body{
+    background-color: black;
+    margin-right: auto;
+    margin-left: auto;
+    width: 1200px;
+    color: rgb(255, 255, 255);
+}
+
+article{
+    width: 500px;
+    background-color: rgb(119, 84, 8);
+    margin-bottom: 24px;
+    padding: 24px 36px;
+    color: black;
+    border-radius: 28px;
+
+
+}
+
+.new-conteiner{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.other_conteiner{
+    background-color: rgb(209, 211, 85);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 24px 36px;
+    color: black;
+}
+
+footer{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 24px 36px;
+}
+
+.fifo {
+    display: flex;
+    align-items: center;
+}
+
+.fifo img {
+    margin-right: 10px;
+}
+
+.Ccentrado{
+    text-align: justify;
+}
+
+.btn {
+    color: black;
+    text-transform: uppercase;
+    text-decoration: none;
+    border: 2px solid black;
+    padding: 10px 20px;
+    font-size: 17px;
+    cursor: pointer;
+    font-weight: bold;
+    background: transparent;
+    position: relative;
+    transition: all 1s;
+    overflow: hidden;
+  }
+  
+  .btn:hover {
+    color: white;
+  }
+  
+  .btn::before {
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 0%;
+    top: 0;
+    left: -40px;
+    transform: skewX(45deg);
+    background-color: purple;
+    z-index: -1;
+    transition: all 1s;
+  }
+  
+  .btn:hover::before {
+    width: 160%;
+  }
+  
